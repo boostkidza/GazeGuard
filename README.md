@@ -38,7 +38,7 @@ The system consists of:
 - **OpenCV**
 - **MongoDB**
 - **PyMongo**
-- **HTML5/CSS3**
+- HTML5/CSS3
 - **IP Webcam (Android App)**
 
 ---
@@ -133,9 +133,3 @@ This project is licensed under the [MIT License](LICENSE)
 ```
 
 ---
-
-### ✅ To Use It:
-
-1. Create a file `README.md` in your project folder
-2. Copy and paste the above content into it
-3. When you push the repo to GitHub, this will display beautifully on the main page
