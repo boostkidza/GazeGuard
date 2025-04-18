@@ -33,13 +33,13 @@ The system consists of:
 
 ## ⚙️ Technology Used
 
-- **Python**
-- **Flask**
-- **OpenCV**
-- **MongoDB**
-- **PyMongo**
+- Python
+- Flask
+- OpenCV
+- MongoDB
+- PyMongo
 - HTML5/CSS3
-- **IP Webcam (Android App)**
+- IP Webcam (Android App)
 
 ---
 
