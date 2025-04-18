@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Recognition Attendance</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        input, button { padding: 10px; margin: 10px; font-size: 18px; }
+        .status { margin-top: 20px; font-size: 20px; color: green; }
+    </style>
+    <script>
+        function registerUser() {
+            let name = document.getElementById("name").value;
+            if (!name) {
+                alert("Please enter a name!");
+                return;
+            }
+
+            let formData = new FormData();
+            formData.append("name", name);
+
+            fetch("/register", { method: "POST", body: formData })
+                .then(response => response.json())
+                .then(data => document.getElementById("status").innerText = data.message)
+                .catch(error => console.error("Error:", error));
+        }
+
+        function markAttendance() {
+            fetch("/attendance", { method: "POST" })
+                .then(response => response.json())
+                .then(data => document.getElementById("status").innerText = data.message)
+                .catch(error => console.error("Error:", error));
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Eye Recognition Attendance System</h1>
+
+    <div>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="registerUser()">Register</button>
+    </div>
+
+    <div>
+        <button onclick="markAttendance()">Mark Attendance</button>
+    </div>
+
+    <p id="status" class="status"></p>
+
+</body>
+</html>
