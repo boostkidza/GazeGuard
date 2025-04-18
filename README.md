@@ -1,11 +1,6 @@
 # GazeGuard
 Eye Recognition Based Attendance System
 
-Absolutely! Here's a GitHub-style **README.md layout** for your **GazeGuard** project, written just like your friend's biomedical inventory repo—with sections like **Project Description**, **Features**, **Technology Used**, **How It Works**, and more.
-
----
-
-### 📄 Final `README.md` for **GazeGuard** (GitHub Style)
 
 ```markdown
 # GazeGuard 👁️🛡️
